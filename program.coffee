@@ -40,5 +40,5 @@ app.get '/', (req, res) ->
   console.log(req.param)
   res.render 'index'
 
-app.listen process.argv[2]
+app.listen process.env.PORT
 console.log "Server running on port #{process.argv[2]}"
